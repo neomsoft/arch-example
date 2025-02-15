@@ -32,4 +32,8 @@ dependencies {
     // org.jetbrains.kotlin.plugin.serialization
     // noinspection UseTomlInstead
     implementation("org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin:2.1.0")
+
+    // androidx.room
+    // noinspection UseTomlInstead
+    implementation("androidx.room:room-gradle-plugin:2.7.0-alpha04")
 }

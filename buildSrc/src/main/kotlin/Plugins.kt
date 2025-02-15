@@ -5,6 +5,7 @@ class Plugins internal constructor() {
     val android = Android()
     val kotlin = Kotlin()
     val google = Google()
+    val androidx = Androidx()
 
     inner class Local {
         val jvm = "project_jvm"
@@ -15,6 +16,7 @@ class Plugins internal constructor() {
         val coroutines = "project_coroutines"
         val datastore = "project_datastore"
         val ktor = "project_ktor"
+        val room = "project_room"
     }
 
     inner class Android {
@@ -31,5 +33,9 @@ class Plugins internal constructor() {
 
     inner class Google {
         val ksp = "com.google.devtools.ksp"
+    }
+
+    inner class Androidx {
+        val room = "androidx.room"
     }
 }

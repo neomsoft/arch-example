@@ -1,5 +1,6 @@
 package extensions
 
+import androidx.room.gradle.RoomExtension
 import com.android.build.api.dsl.CommonExtension
 import com.google.devtools.ksp.gradle.KspExtension
 import org.gradle.api.Action
@@ -32,6 +33,10 @@ internal fun Project.kotlinJvmCompilerOptions(block: KotlinJvmCompilerOptions.()
 internal fun ExtensionContainer.configureKsp(
     action: KspExtension.() -> Unit,
 ) = configure(name = "ksp", action = action)
+
+internal fun ExtensionContainer.configureRoom(
+    action: RoomExtension.() -> Unit,
+) = configure(name = "room", action = action)
 
 internal fun DependencyHandler.implementation(dependencyNotation: Any) =
     add("implementation", dependencyNotation)

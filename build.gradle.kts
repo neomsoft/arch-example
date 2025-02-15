@@ -9,4 +9,5 @@ plugins {
     id(plugin.kotlin.compose) apply false
     id(plugin.google.ksp) apply false
     id(plugin.kotlin.serialization) apply false
+    id(plugin.androidx.room) apply false
 }

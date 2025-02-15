@@ -21,6 +21,8 @@ internal class Libs(
     val koin = Koin()
     val datastore = Datastore()
     val ktor = Ktor()
+    val room = Room()
+    val sqlite = Sqlite()
 
     inner class AndroidX {
         val compose = Compose()
@@ -67,6 +69,16 @@ internal class Libs(
         inner class Serialization {
             val kotlinx = library(alias = "ktor.serialization.kotlinx")
         }
+    }
+
+    inner class Room {
+        val runtime = library(alias = "room.runtime")
+        val android = library(alias = "room.android")
+        val compiler = library(alias = "room.compiler")
+    }
+
+    inner class Sqlite {
+        val bundled = library(alias = "sqlite.bundled")
     }
 
     private fun library(alias: String): Provider<MinimalExternalModuleDependency> {

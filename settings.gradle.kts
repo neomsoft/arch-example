@@ -29,4 +29,5 @@ include(":app")
 
 include(":modules:kotlin:storage-value")
 include(":modules:kotlin:storage-value-datastore-delegate")
+include(":modules:kotlin:httpclient-result-extensions")
 include(":modules:app:data:preferences")

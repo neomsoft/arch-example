@@ -20,6 +20,7 @@ internal class Libs(
     val kotlinx = Kotlinx()
     val koin = Koin()
     val datastore = Datastore()
+    val ktor = Ktor()
 
     inner class AndroidX {
         val compose = Compose()
@@ -51,6 +52,21 @@ internal class Libs(
     inner class Datastore {
         val core = library(alias = "datastore.core")
         val preferences = library(alias = "datastore.preferences")
+    }
+
+    inner class Ktor {
+        val client = Client()
+        val serialization = Serialization()
+
+        inner class Client {
+            val android = library(alias = "ktor.client.android")
+            val core = library(alias = "ktor.client.core")
+            val contentNegotiation = library(alias = "ktor.client.contentNegotiation")
+        }
+
+        inner class Serialization {
+            val kotlinx = library(alias = "ktor.serialization.kotlinx")
+        }
     }
 
     private fun library(alias: String): Provider<MinimalExternalModuleDependency> {

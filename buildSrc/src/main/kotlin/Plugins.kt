@@ -14,6 +14,7 @@ class Plugins internal constructor() {
         val koin = "project_koin"
         val coroutines = "project_coroutines"
         val datastore = "project_datastore"
+        val ktor = "project_ktor"
     }
 
     inner class Android {
@@ -25,6 +26,7 @@ class Plugins internal constructor() {
         val jvm = "org.jetbrains.kotlin.jvm"
         val android = "org.jetbrains.kotlin.android"
         val compose = "org.jetbrains.kotlin.plugin.compose"
+        val serialization = "org.jetbrains.kotlin.plugin.serialization"
     }
 
     inner class Google {

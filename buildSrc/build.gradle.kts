@@ -28,4 +28,8 @@ dependencies {
     // com.google.devtools.ksp
     // noinspection UseTomlInstead
     implementation("com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.0.20-1.0.25")
+
+    // org.jetbrains.kotlin.plugin.serialization
+    // noinspection UseTomlInstead
+    implementation("org.jetbrains.kotlin.plugin.serialization:org.jetbrains.kotlin.plugin.serialization.gradle.plugin:2.1.0")
 }

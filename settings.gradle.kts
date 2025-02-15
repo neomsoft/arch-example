@@ -29,3 +29,4 @@ include(":app")
 
 include(":modules:kotlin:storage-value")
 include(":modules:kotlin:storage-value-datastore-delegate")
+include(":modules:app:data:preferences")

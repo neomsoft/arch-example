@@ -28,6 +28,9 @@ android {
 }
 
 dependencies {
+    implementation(projects.modules.kotlin.storageValue)
+    implementation(projects.modules.app.data.preferences)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

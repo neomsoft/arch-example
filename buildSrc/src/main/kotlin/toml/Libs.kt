@@ -17,6 +17,7 @@ internal class Libs(
     private val versionCatalog: VersionCatalog,
 ) {
     val androidx = AndroidX()
+    val koin = Koin()
 
     inner class AndroidX {
         val compose = Compose()
@@ -31,6 +32,14 @@ internal class Libs(
             val testJunit4 = library(alias = "androidx.ui.test.junit4")
             val material3 = library(alias = "androidx.material3")
         }
+    }
+
+    inner class Koin {
+        val core = library(alias = "koin.core")
+        val android = library(alias = "koin.android")
+        val composeViewmodel = library(alias = "koin.composeViewmodel")
+        val annotations = library(alias = "koin.annotations")
+        val kspCompiler = library(alias = "koin.ksp.compiler")
     }
 
     private fun library(alias: String): Provider<MinimalExternalModuleDependency> {

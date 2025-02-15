@@ -5,6 +5,7 @@ plugins {
     id(plugin.android.application)
     id(plugin.kotlin.android)
     id(plugin.local.compose)
+    id(plugin.local.koin)
 }
 
 configurePlatform(modulePackage = BuildConstants.APPLICATION_ID)
@@ -30,6 +31,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.koin.android)
 
     testImplementation(libs.junit)
 

@@ -11,6 +11,7 @@ class Plugins internal constructor() {
         val platform = "project_platform"
         val compose = "project_compose"
         val ksp = "project_ksp"
+        val koin = "project_koin"
     }
 
     inner class Android {

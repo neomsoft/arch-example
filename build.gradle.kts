@@ -7,4 +7,5 @@ plugins {
     id(plugin.android.library) apply false
     id(plugin.kotlin.android) apply false
     id(plugin.kotlin.compose) apply false
+    id(plugin.google.ksp) apply false
 }

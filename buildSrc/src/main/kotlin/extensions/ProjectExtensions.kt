@@ -1,6 +1,7 @@
 package extensions
 
 import com.android.build.api.dsl.CommonExtension
+import com.google.devtools.ksp.gradle.KspExtension
 import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.DependencyHandler
@@ -28,6 +29,10 @@ internal fun Project.kotlinJvmCompilerOptions(block: KotlinJvmCompilerOptions.()
     }
 }
 
+internal fun ExtensionContainer.configureKsp(
+    action: KspExtension.() -> Unit,
+) = configure(name = "ksp", action = action)
+
 internal fun DependencyHandler.implementation(dependencyNotation: Any) =
     add("implementation", dependencyNotation)
 
@@ -36,3 +41,6 @@ internal fun DependencyHandler.debugImplementation(dependencyNotation: Any) =
 
 internal fun DependencyHandler.androidTestImplementation(dependencyNotation: Any) =
     add("androidTestImplementation", dependencyNotation)
+
+internal fun DependencyHandler.ksp(dependencyNotation: Any) =
+    add("ksp", dependencyNotation)

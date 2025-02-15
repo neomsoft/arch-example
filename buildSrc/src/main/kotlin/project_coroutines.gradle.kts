@@ -1,0 +1,3 @@
+import configurations.configureCoroutines
+
+configureCoroutines()

@@ -12,6 +12,7 @@ class Plugins internal constructor() {
         val compose = "project_compose"
         val ksp = "project_ksp"
         val koin = "project_koin"
+        val coroutines = "project_coroutines"
     }
 
     inner class Android {

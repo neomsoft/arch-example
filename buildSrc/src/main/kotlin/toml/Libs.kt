@@ -17,6 +17,7 @@ internal class Libs(
     private val versionCatalog: VersionCatalog,
 ) {
     val androidx = AndroidX()
+    val kotlinx = Kotlinx()
     val koin = Koin()
 
     inner class AndroidX {
@@ -40,6 +41,10 @@ internal class Libs(
         val composeViewmodel = library(alias = "koin.composeViewmodel")
         val annotations = library(alias = "koin.annotations")
         val kspCompiler = library(alias = "koin.ksp.compiler")
+    }
+
+    inner class Kotlinx {
+        val coroutines = library(alias = "kotlinx.coroutines.core")
     }
 
     private fun library(alias: String): Provider<MinimalExternalModuleDependency> {

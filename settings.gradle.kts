@@ -26,3 +26,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Arch-example"
 include(":app")
+
+include(":modules:kotlin:storage-value")
+include(":modules:kotlin:storage-value-datastore-delegate")

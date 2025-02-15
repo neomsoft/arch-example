@@ -19,6 +19,7 @@ internal class Libs(
     val androidx = AndroidX()
     val kotlinx = Kotlinx()
     val koin = Koin()
+    val datastore = Datastore()
 
     inner class AndroidX {
         val compose = Compose()
@@ -45,6 +46,11 @@ internal class Libs(
 
     inner class Kotlinx {
         val coroutines = library(alias = "kotlinx.coroutines.core")
+    }
+
+    inner class Datastore {
+        val core = library(alias = "datastore.core")
+        val preferences = library(alias = "datastore.preferences")
     }
 
     private fun library(alias: String): Provider<MinimalExternalModuleDependency> {

@@ -13,6 +13,7 @@ class Plugins internal constructor() {
         val ksp = "project_ksp"
         val koin = "project_koin"
         val coroutines = "project_coroutines"
+        val datastore = "project_datastore"
     }
 
     inner class Android {

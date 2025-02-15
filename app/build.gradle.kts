@@ -31,6 +31,7 @@ dependencies {
     implementation(projects.modules.kotlin.storageValue)
     implementation(projects.modules.app.data.preferences)
     implementation(projects.modules.app.data.api)
+    implementation(projects.modules.app.data.database)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

@@ -31,6 +31,7 @@ include(":modules:kotlin:storage-value")
 include(":modules:kotlin:storage-value-datastore-delegate")
 include(":modules:kotlin:httpclient-result-extensions")
 include(":modules:kotlin:flow-result")
+include(":modules:kotlin:coroutine-scope-owner")
 
 include(":modules:app:data:preferences")
 include(":modules:app:data:api")

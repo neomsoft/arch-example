@@ -29,14 +29,23 @@ android {
 
 dependencies {
     implementation(projects.modules.kotlin.storageValue)
+    implementation(projects.modules.kotlin.flowResult)
+    implementation(projects.modules.kotlin.coroutineScopeOwner)
+
+    implementation(projects.modules.app.core.entities)
     implementation(projects.modules.app.data.preferences)
     implementation(projects.modules.app.data.api)
     implementation(projects.modules.app.data.database)
+    implementation(projects.modules.app.data.repositories)
+    implementation(projects.modules.app.data.repositoriesImpl)
+
+    implementation(projects.modules.app.ui.common.design)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.koin.android)
+    implementation(libs.androidx.splashscreen)
 
     testImplementation(libs.junit)
 

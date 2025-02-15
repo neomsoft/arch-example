@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_loading_error_text">Loading data error.</string>
+    <string name="content_loading_error_description">Check your internet connection or try later.</string>
+</resources>

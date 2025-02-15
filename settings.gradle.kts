@@ -33,6 +33,12 @@ include(":modules:kotlin:httpclient-result-extensions")
 include(":modules:kotlin:flow-result")
 include(":modules:kotlin:coroutine-scope-owner")
 
+include(":modules:app:core:entities")
+
 include(":modules:app:data:preferences")
 include(":modules:app:data:api")
 include(":modules:app:data:database")
+include(":modules:app:data:repositories")
+include(":modules:app:data:repositories-impl")
+
+include(":modules:app:ui:common:design")

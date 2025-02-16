@@ -35,6 +35,7 @@ include(":modules:kotlin:coroutine-scope-owner")
 include(":modules:kotlin:disposable-effect-with-lifecycle")
 include(":modules:kotlin:cicerone")
 include(":modules:kotlin:cicerone-navigation-compose")
+include(":modules:kotlin:navigation-compose-destination")
 
 include(":modules:app:core:entities")
 

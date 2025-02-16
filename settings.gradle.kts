@@ -46,3 +46,10 @@ include(":modules:app:data:repositories")
 include(":modules:app:data:repositories-impl")
 
 include(":modules:app:ui:common:design")
+include(":modules:app:ui:common:navigation")
+include(":modules:app:ui:common:navigation-impl")
+
+include(":modules:app:ui:screens:onboarding")
+include(":modules:app:ui:screens:main")
+include(":modules:app:ui:screens:fact")
+include(":modules:app:ui:screens:fact-list")

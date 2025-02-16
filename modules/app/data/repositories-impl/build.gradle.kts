@@ -9,5 +9,7 @@ dependencies {
     implementation(projects.modules.kotlin.flowResult)
     implementation(projects.modules.app.core.entities)
     implementation(projects.modules.app.data.preferences)
+    implementation(projects.modules.app.data.api)
+    implementation(projects.modules.app.data.database)
     implementation(projects.modules.app.data.repositories)
 }

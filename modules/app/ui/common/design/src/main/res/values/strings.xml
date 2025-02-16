@@ -2,4 +2,12 @@
 <resources>
     <string name="content_loading_error_text">Loading data error.</string>
     <string name="content_loading_error_description">Check your internet connection or try later.</string>
+    <string name="onboarding_title_1">Interesting and funny facts about fat and skinny cats.</string>
+    <string name="onboarding_title_2">Architecture example and code style. Modularization and multiplatform libraries.</string>
+    <string name="onboarding_title_3">Enjoy this small app and use it in your projects.</string>
+    <string name="skip">Skip</string>
+    <string name="get_fact">Get fact</string>
+    <string name="fact_list">Fact list</string>
+    <string name="new_fact_screen_title">New fact</string>
+    <string name="fact_list_screen_title">Fact list</string>
 </resources>

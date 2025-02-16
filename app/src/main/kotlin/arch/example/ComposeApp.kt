@@ -1,15 +1,12 @@
 package arch.example
 
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.compose.rememberNavController
 import arch.example.app.ui.common.design.theme.AppTheme
+import arch.example.app.ui.common.navigation.impl.AppNavHost
 import io.github.neomsoft.flow.result.onSuccess
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.context.startKoin
@@ -35,6 +32,7 @@ fun initApp(
 fun ComposeApp(onContentLoaded: () -> Unit) {
     val viewModel = koinViewModel<ComposeAppViewModel>()
     val state by viewModel.state.collectAsStateWithLifecycle()
+    val navController = rememberNavController()
 
     state.onSuccess {
         LaunchedEffect(key1 = null) {
@@ -42,12 +40,10 @@ fun ComposeApp(onContentLoaded: () -> Unit) {
         }
 
         AppTheme(themeMode = it.themeMode) {
-            Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                Text(
-                    text = "Hello Android!",
-                    modifier = Modifier.padding(innerPadding)
-                )
-            }
+            AppNavHost(
+                onboardingShown = it.onboardingShown,
+                navController = navController,
+            )
         }
     }
 }

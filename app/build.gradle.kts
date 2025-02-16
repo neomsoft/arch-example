@@ -40,12 +40,20 @@ dependencies {
     implementation(projects.modules.app.data.repositoriesImpl)
 
     implementation(projects.modules.app.ui.common.design)
+    implementation(projects.modules.app.ui.common.navigation)
+    implementation(projects.modules.app.ui.common.navigationImpl)
+
+    implementation(projects.modules.app.ui.screens.onboarding)
+    implementation(projects.modules.app.ui.screens.main)
+    implementation(projects.modules.app.ui.screens.fact)
+    implementation(projects.modules.app.ui.screens.factList)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.koin.android)
     implementation(libs.androidx.splashscreen)
+    implementation(libs.compose.navigation)
 
     testImplementation(libs.junit)
 

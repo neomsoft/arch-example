@@ -17,6 +17,7 @@ class Plugins internal constructor() {
         val datastore = "project_datastore"
         val ktor = "project_ktor"
         val room = "project_room"
+        val screen = "project_screen"
     }
 
     inner class Android {

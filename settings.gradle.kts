@@ -32,6 +32,7 @@ include(":modules:kotlin:storage-value-datastore-delegate")
 include(":modules:kotlin:httpclient-result-extensions")
 include(":modules:kotlin:flow-result")
 include(":modules:kotlin:coroutine-scope-owner")
+include(":modules:kotlin:disposable-effect-with-lifecycle")
 
 include(":modules:app:core:entities")
 

@@ -33,6 +33,8 @@ include(":modules:kotlin:httpclient-result-extensions")
 include(":modules:kotlin:flow-result")
 include(":modules:kotlin:coroutine-scope-owner")
 include(":modules:kotlin:disposable-effect-with-lifecycle")
+include(":modules:kotlin:cicerone")
+include(":modules:kotlin:cicerone-navigation-compose")
 
 include(":modules:app:core:entities")
 
